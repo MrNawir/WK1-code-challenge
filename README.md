@@ -52,8 +52,6 @@ Prompts for Basic Salary and Benefits, then calculates and prints:
 - Total Deductions
 - Net Salary
 
-Note: Rates align with commonly referenced KRA/NHIF/NSSF guidance. Always verify with official sources if exact figures are required.
-
 ## Author & License
 
 - Author: Ibrahim Nawir
