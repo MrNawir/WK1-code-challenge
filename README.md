@@ -56,5 +56,5 @@ Note: Rates align with commonly referenced KRA/NHIF/NSSF guidance. Always verify
 
 ## Author & License
 
-- Author: Abdimalik Kulow
+- Author: Ibrahim Nawir
 - License: MIT
