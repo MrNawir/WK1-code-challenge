@@ -1,7 +1,6 @@
 // Challenge 2: Speed Detector
 // Prompts for car speed and prints either "Ok", "Points: X", or "License suspended".
-const input = prompt('Enter car speed (km/h):');
-const speed = Number(input);
+const speed = Number(65);
 
 const speedLimit = 70;         // km/h
 const maxPoints = 12;          // license suspension threshold
