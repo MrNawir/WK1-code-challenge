@@ -1,90 +1,60 @@
-// Challenge 1: Student Grade Generator
-// Description
-The program takes a numerical value (marks) and prints a corresponding grade:
+# WK1: Code Challenge (JavaScript)
 
-A: 80–100
+Three standalone toy problems implemented in plain JavaScript:
 
-B: 60–79
+- Student Grade Generator
+- Speed Detector
+- Net Salary Calculator
 
-C: 49–59
+This repository follows the assignment requirements: one folder with three files, one solution per file, and a clear README.
 
-D: Exactly 40
+## Project Setup
 
-E: Below 40
+No build or dependencies required. You can run each file directly in a web browser console:
 
-Invalid marks (< 0 or > 100) will be flagged as an error.
+1. Open any web page in Chrome/Firefox.
+2. Open Developer Tools → Console.
+3. Copy the full contents of the respective `challengeX.js` file and paste it into the Console.
+4. Press Enter and follow any prompts.
 
-// Challenge 2: Speed Detector
-// Description
-The program simulates a basic speed enforcement system. It compares the driver's current speed to the legal limit and calculates demerit points accordingly.
+Alternatively, you can include the files in a simple HTML page and open it in your browser, but this is not required.
 
-Rules:
+## Challenge 1: Student Grade Generator (`challenge1.js`)
 
-If the speed is within the limit, print: Ok
+Prompts for student marks (0–100) and prints the grade:
 
-For every 5 km/h over the limit, 1 point is added.
+- A: > 79
+- B: 60–79
+- C: 49–59
+- D: 40–49
+- E: < 40
 
-If the driver exceeds 12 points, print: License suspended
+Invalid inputs (non-numeric or out of range) print `Invalid marks`.
 
-// Challenge 3: Net Salary Calculator
-// Description
-The calculator takes basic salary and benefits as input and outputs the following:
+## Challenge 2: Speed Detector (`challenge2.js`)
 
-Gross Salary
+Prompts for car speed (km/h) and prints:
 
-SHIF Deduction
+- `Ok` if speed ≤ 70
+- `Points: X` where X = floor((speed − 70) / 5)
+- `License suspended` if points > 12
 
-NSSF Deduction
+Invalid inputs (non-numeric or negative) print `Invalid speed`.
 
-Housing Levy
+## Challenge 3: Net Salary Calculator (`challenge3.js`)
 
-PAYE (Tax)
+Prompts for Basic Salary and Benefits, then calculates and prints:
 
-Total Deductions
+- Gross Salary
+- NHIF Deduction (per NHIF rates table)
+- NSSF Deduction (6% with Tier I and II up to KES 72,000)
+- PAYE (with personal relief of KES 2,400)
+- Total Deductions
+- Net Salary
 
-Net Salary
+Note: Rates align with commonly referenced KRA/NHIF/NSSF guidance. Always verify with official sources if exact figures are required.
 
-// Inputs
-Field Description
-Basic Salary Monthly gross base salary (KES)
-Benefits Monthly additional benefits (KES)
+## Author & License
 
-//Outputs (Internally Computed)
-
-Gross Salary: Basic Salary + Benefits
-
-SHIF: 2.75% of Gross Salary
-
-NSSF:
-
-Tier I: 6% of first KES 8,000
-
-Tier II: 6% of salary from KES 8,001 to KES 72,000
-
-Cap: Anything above KES 72,000 doesn’t attract additional NSSF
-
-Housing Levy: 1.5% of Gross Salary
-
-PAYE (Taxable Income after deductions):
-
-10% on the first KES 24,000
-
-25% on the next KES 8,333
-
-30% on income up to KES 500,000
-
-32.5% on income between KES 500,001 – 800,000
-
-35% on income above KES 800,000
-
-Personal Relief: KES 2,400/month (deducted from PAYE)
-
-Net Salary: Gross Salary - (SHIF + NSSF + Housing Levy + PAYE)
-
-// Authour
-Abdimalik Kulow
-
-// Project
-WK 1: Challenge
-
-Moringa School , 2025
+- Author: Abdimalik Kulow
+- License: MIT
